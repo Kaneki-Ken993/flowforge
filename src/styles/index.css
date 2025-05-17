@@ -26,10 +26,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -55,6 +51,22 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+
+.task-item.dragging {
+  opacity: 0.5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-drop-area.drag-over {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.column-drag-handle {
+  cursor: move;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
